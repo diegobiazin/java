@@ -39,8 +39,8 @@ public class LambdaTest {
 
         Predicate<Carro> carroPredicate2 = carro -> "verde".equals(carro.getCor());
 
-        System.out.println(carroPredicate.test(new Carro("Gol", "verde", 2012)));
-        System.out.println(carroPredicate2.test(new Carro("Gol", "verde", 2012)));
+        System.out.println(carroPredicate.test(new Carro("verde", 2012)));
+        System.out.println(carroPredicate2.test(new Carro("verde", 2012)));
     }
 
     public static void runnableLambda() {
@@ -48,7 +48,7 @@ public class LambdaTest {
         new Thread(runnable).start();
     }
 
-    public static void consumerAccept(){
+    public static void consumerAccept() {
         Consumer<String> consumer = new Consumer<String>() {
             @Override
             public void accept(String strings) {

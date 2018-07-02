@@ -1,12 +1,11 @@
 package br.com.diegobiazin.javacore.lambda.classes;
 
 public class Carro {
-    private String nome;
+    private String nome = "Gol";
     private String cor;
     private int ano;
 
-    public Carro(String nome, String cor, int ano) {
-        this.nome = nome;
+    public Carro(String cor, int ano) {
         this.cor = cor;
         this.ano = ano;
     }
