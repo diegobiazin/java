@@ -10,7 +10,7 @@ import java.util.function.*;
 
 import static java.util.Arrays.asList;
 
-public class LambdaTest3 {
+public class MethodReferencesTest {
     public static void main(String[] args) {
         forEach(asList("Diego", "Biazin", "Dota 2"), System.out::println);
         List<Carro> carros = asList(new Carro("verde", 1999), new Carro("vermelho", 2005), new Carro("branco", 1985));
