@@ -9,6 +9,9 @@
     - [Predicate](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/predicate)
     - [Lambda](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/lambda)
     - [Method References](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/methodreferences)
+    - [Streams](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/streams)
+    - [Novas Regras Para Interface](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/novasRegrasInterface)
+    - [Optional](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/optional)
 
 ### Autor
 
