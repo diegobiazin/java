@@ -1,0 +1,62 @@
+package br.com.diegobiazin.javacore.streams.test;
+
+import br.com.diegobiazin.javacore.streams.classes.Pessoa;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamTest {
+    // Pegar os tres primeiros nomes das pessoas com menos de 25 anos
+    // Ordenados pelo nome
+
+    public static void main(String[] args) {
+        List<Pessoa> pessoas = Pessoa.bancoDePessoas();
+
+        consultaJava7(pessoas);
+
+        List<String> nomes2 = pessoas
+                .stream()
+                .filter(p -> p.getIdade() < 25)
+                .sorted(Comparator.comparing(Pessoa::getNome))
+                .limit(3)
+                .skip(1)
+                .map(Pessoa::getNome)
+                .collect(Collectors.toList());
+
+        System.out.println(pessoas
+                .stream()
+                .distinct()
+                .filter(p -> p.getIdade() < 25)
+                .map(Pessoa::getNome)
+                .count());
+
+        pessoas.stream().forEach(System.out::println);
+
+        System.out.println(nomes2);
+
+        // Intermidiate e Terminal
+    }
+
+    @Deprecated
+    private static void consultaJava7(List<Pessoa> pessoas) {
+        Collections.sort(pessoas, new Comparator<Pessoa>() {
+            @Override
+            public int compare(Pessoa o1, Pessoa o2) {
+                return o1.getNome().compareTo(o2.getNome());
+            }
+        });
+
+        List<String> nomes = new ArrayList<>();
+        for (Pessoa pessoa : pessoas)
+            if (pessoa.getIdade() < 25) {
+                nomes.add(pessoa.getNome());
+                if (nomes.size() >= 3)
+                    break;
+            }
+
+        System.out.println(nomes);
+    }
+}
