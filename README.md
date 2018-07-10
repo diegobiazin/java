@@ -2,8 +2,17 @@
 
 ### Sumário
 
-- [Design Patterns](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/designpatterns)
-- [Serializable](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/serializable)
+- [Serializable](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/template_method)
+
+* Design Patterns : *Boas práticas de programação*
+    - [Builder](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/designpatterns/builder)
+    - [Chain of Responsibility](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/designpatterns/chain_of_responsibility)
+    - [Observer](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/designpatterns/observer)
+    - [Singleton](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/designpatterns/singleton)
+    - [State](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/designpatterns/singleton)
+    - [Strategy](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/designpatterns/state)
+    - [Template Method](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/designpatterns/builder)
+        
  
 * Java 8 : *Programação funcional*
     - [Predicate](https://github.com/diegobiazin/java/tree/master/src/br/com/diegobiazin/javacore/predicate)
